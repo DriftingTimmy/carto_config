@@ -20,6 +20,10 @@ options = {
   tracking_frame = "imu",
   pipeline = {
     {
+      action = "write_ply",
+      filename = "points.ply",
+    },
+    {
       action = "min_max_range_filter",
       min_range = 1.,
       max_range = 60.,
